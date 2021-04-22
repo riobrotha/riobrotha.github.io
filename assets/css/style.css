@@ -1,5 +1,5 @@
 /* css variables */ 
-@import url(./global/_variables.css);
+@import url('./global/_variables.css');
 
 html {
     scroll-behavior: smooth;

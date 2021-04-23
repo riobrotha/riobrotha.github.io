@@ -1,5 +1,11 @@
 /* css variables */ 
-@import url('./global/_variables.css');
+:root{
+    --primary-color: #2D4A49;
+    --hover-primary-color: #223d3d;
+    --secondary-color: #BB9A5D;
+    --title-color: #141313;
+    --text-color: #777777; 
+}
 
 html {
     scroll-behavior: smooth;
@@ -7,6 +13,11 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    overflow: hidden !important;
 }
 
 h1,h2,h3,h4 {
@@ -83,11 +94,7 @@ section {
     outline: 0;
 }
 
-
-
 /* End of Owl Carousel */
-
-
 
 .jumbotron {
     
@@ -532,6 +539,10 @@ section {
     padding: 40px 0px 50px 0px;
 }
 
+.content-package .container {
+    padding-bottom: 100px;
+}
+
 
 .content-package .card {
     border-radius: 30px;
@@ -702,8 +713,8 @@ section {
 /* Scroll to top */
 .scroll-to-top {
     position: fixed;
-    right: 3rem;
-    bottom: 2rem;
+    right: 1rem;
+    bottom: 1rem;
     color: white;
     background-color: var(--text-color);
     width: 2.75rem;
@@ -867,6 +878,23 @@ section {
     .content-make-appointment .form-group i {
         display: block !important; 
         color: var(--primary-color);
+    }
+
+    .scroll-to-top {
+        position: fixed;
+        right: 3rem;
+        bottom: 2rem;
+        color: white;
+        background-color: var(--text-color);
+        width: 2.75rem;
+        height: 2.75rem;
+        text-align: center;
+        font-size: 24px;
+        line-height: 45px;
+        border-radius: 50% !important;
+        opacity: 0.8;
+        margin: auto;
+        z-index: 2;
     }
     
 }

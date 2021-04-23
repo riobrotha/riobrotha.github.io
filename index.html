@@ -15,7 +15,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css?2032">
+        <link rel="stylesheet" href="assets/css/style.css?2322">
         <link rel="stylesheet"
             href="assets/css/owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet"
@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="assets/css/animate/animate.css">
         
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://kit.fontawesome.com/b905515b9b.js"
             crossorigin="anonymous"></script>
 
@@ -115,7 +115,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-hers text-white"
-                                    href="#"><span>Make Appointment</span></a>
+                                    href="#appointment"><span>Make Appointment</span></a>
                             </li>
                         </ul>
                     </div>
@@ -365,24 +365,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row non-desktop-device">
-                        <div class="col-md-6">
-                            <div class="card no-border" style="width: 100%;">
+                <div class="row non-desktop-device">
+                        <div class="col-md-6 col-6">
+                            <div class="card no-border mt-3" style="width: 100%;">
                                 <div class="treatments">
                                     <span class="text-white title">Treatments</span>
                                 </div>
                                
                                     
                            </div>
-                           <div class="card no-border mt-3" style="width: 100%;">
+                          
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="card no-border mt-3" style="width: 100%;">
                                 
                                 <div class="products">
                                     <span class="text-white title">Products</span>
                                 </div>
                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -448,6 +449,80 @@
                 </div>
             </div>
             
+        </section>
+
+        <section class="content-testimonial" id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb-5">
+                        <div class="text-center">
+                            <h3>What They Say</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card" data-aos="fade" data-aos-duration="1000">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                       
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <img src="assets/img/people/people3.jpg" class="swiper-slide" id="active" alt="">
+                                                <img src="assets/img/people/people2.jpg" class="swiper-slide" id="non-active" alt="">
+                                                <img src="assets/img/people/people1.jpg" class="swiper-slide" id="non-active" alt="">
+                                            </div>
+
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="text-center">
+                                            
+                                            <div class="space-testi" id="testi-thumbnail">
+                                                <h5 class="mt-4">Jane Christa</h5>
+                                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nemo tempora ut possimus perferendis saepe 
+                                                    fugiat nulla delectus hic modi!</p>
+                                                <i class="fas fa-quote-left fa-4x mt-4 mb-5 color-hers-secondary"></i>
+                                            </div>
+
+                                            <!-- Testi Data -->
+                                            <div class="data-testi" style="display: none;">
+                                                <div class="testi" data-index="0">
+                                                    <h5 class="mt-4">Jane Christa</h5>
+                                                    <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nemo tempora ut possimus perferendis saepe 
+                                                        fugiat nulla delectus hic modi!</p>
+                                                    <i class="fas fa-quote-left fa-4x mt-4 mb-5 color-hers-secondary"></i>
+                                                </div>
+                                                <div class="testi" data-index="1">
+                                                    <h5 class="mt-4">Jane Christa 2</h5>
+                                                    <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nemo tempora ut possimus perferendis saepe 
+                                                        fugiat nulla delectus hic modi!</p>
+                                                    <i class="fas fa-quote-left fa-4x mt-4 mb-5 color-hers-secondary"></i>
+                                                </div>
+                                                <div class="testi" data-index="2">
+                                                    <h5 class="mt-4">Jane Christa 3</h5>
+                                                    <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nemo tempora ut possimus perferendis saepe 
+                                                        fugiat nulla delectus hic modi!</p>
+                                                    <i class="fas fa-quote-left fa-4x mt-4 mb-5 color-hers-secondary"></i>
+                                                </div>
+
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
         </section>
 
         <section class="content-package" id="package">
@@ -694,7 +769,8 @@
             crossorigin="anonymous"></script>
         <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="assets/js/app.js?1202"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/app.js?1322"></script>
         <!-- End Of Script -->
     </body>
 </html>

@@ -30,6 +30,52 @@ btnSearch.addEventListener('click', function (e) {
 
 
 });
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 60,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+});
+
+
+const content = document.querySelectorAll('.testi');
+const slider  = document.querySelectorAll('.swiper-slide');
+swiper.on('slideChange', function () {
+    Array.from(content).forEach(function(element) {
+        let index = element.getAttribute('data-index'); 
+        if (index == swiper.activeIndex) {
+           
+            document.querySelector('.space-testi').classList.add('animate__animated', 'animate__fadeIn', 'slow');
+
+            var elm = document.querySelector('.space-testi');
+            var newone = elm.cloneNode(true);
+
+            elm.parentNode.replaceChild(newone, elm);
+            document.querySelector('.space-testi').innerHTML = element.innerHTML;
+        }
+
+    });
+
+    Array.from(slider).forEach(function(element, key) {
+        if(element.getAttribute("id") == "active") {
+            element.setAttribute("id", "non-active");
+        }
+
+        if (swiper.activeIndex == key) {
+           if(element.getAttribute("id") == "non-active") {
+               element.setAttribute("id", "active");
+           }
+        }
+    });
+
+});
+
 (function ($) {
     "use strict"; //Start of use Strict
 
@@ -71,6 +117,7 @@ $(document).ready(function () {
         touchDrag: false,
         mouseDrag: false
     });
+
 
     AOS.init({
         once: true

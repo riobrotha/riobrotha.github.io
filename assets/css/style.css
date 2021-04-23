@@ -33,6 +33,10 @@ section {
     color: var(--primary-color);
 }
 
+.color-hers-secondary {
+    color: var(--secondary-color);
+}
+
 .color-disabled {
     color: var(--text-color) !important;
 }
@@ -47,6 +51,14 @@ section {
 
 .show {
     display: inline-block;
+}
+
+
+
+
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+    background: var(--secondary-color);
 }
 
 /* Owl Carousel */
@@ -547,6 +559,7 @@ section {
 .content-package .card {
     border-radius: 30px;
     border: none;
+    margin-top: 20px;
     box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.10);
     -webkit-box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.10);
     -moz-box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.10);
@@ -554,7 +567,8 @@ section {
 
 .content-package .card.recomended {
     background-color: var(--primary-color);
-    transform: scale(1.1);
+    transform: scale(1);
+    margin-top: 20px;
     box-shadow: -3px 1px 14px 2px rgba(45, 74, 73, 0.4);
     -webkit-box-shadow: -3px 1px 14px 2px rgba(45, 74, 73, 0.4);
     -moz-box-shadow: -3px 1px 14px 2px rgba(45, 74, 73, 0.4);
@@ -582,6 +596,8 @@ section {
 .content-package .card.recomended .card-body p {
     color: white;
 }
+
+
 
 .content-package .card h4 {
     font-size: 20px;
@@ -829,6 +845,103 @@ section {
 
 /* END APPOINTMENT */
 
+/* Testi */
+.content-testimonial .container {
+    padding-bottom: 50px;
+}
+
+
+.content-testimonial h5 {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.content-testimonial img {
+    width: 100px !important;
+    border-radius: 50%;
+}
+
+.content-testimonial .card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.10);
+   
+    overflow: hidden;
+    -webkit-box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.10);
+    -moz-box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.10);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    margin-top: 50px !important;
+    bottom: 700 !important;
+    
+}
+
+.swiper-container {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    
+}
+
+#active {
+    transition: all .5s;
+    transform: scale(1.5);
+    
+}
+
+#non-active {
+    transition: all .5s;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slow {
+    --animate-duration: 1.3s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* Testi */
+
 /* DESKTOP VERSION */
 @media (min-width: 992px) { 
     .nav-link {
@@ -895,6 +1008,15 @@ section {
         opacity: 0.8;
         margin: auto;
         z-index: 2;
+    }
+
+    .content-package .card {
+        margin-top: 0px;
+    }
+
+    .content-package .card.recomended {
+        transform: scale(1.1);
+        margin-top: 0px;
     }
     
 }

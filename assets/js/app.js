@@ -73,9 +73,9 @@ $(document).ready(function () {
     });
 
     AOS.init({
-        once: false
+        once: true
     });
 
-    console.log($('.jumbotron').height());
+    
     
 });
